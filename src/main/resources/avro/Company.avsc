@@ -1,0 +1,27 @@
+{
+	"namespace": "org.jresearch.kafka.examples",
+	"type": "record",
+	"name": "Company",
+	"fields": [
+		{
+            "name": "header",
+            "type": "org.jresearch.kafka.examples.Header"   
+        },
+		{
+			"name": "tradeNumber",
+			"type": "int"
+		},
+		{
+			"name": "registeredName",
+			"type": "string"
+		},
+		{
+			"name": "eventCreatedAt",
+			"doc": "Timestamp of event creation in GMT time zone",
+			"type": {
+				"type": "long",
+				"logicalType": "timestamp-millis"
+			}
+		}
+	]
+}

@@ -1,0 +1,22 @@
+{
+    "type": "record",
+    "name": "Header",
+    "namespace": "org.jresearch.kafka.examples",
+    "fields": [
+      {
+        "name": "MessageId",
+        "type": "string"
+      },
+      {
+        "name": "TraceId",
+        "type": "string"
+      },
+      {
+        "name": "Timestamp",
+        "type": {
+          "type": "long",
+          "logicalType": "timestamp-millis"
+        }
+      }
+    ]
+}
